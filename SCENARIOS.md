@@ -2,7 +2,7 @@
 
 Pick **one** of the four scenarios below. Each one gives you a stakeholder,
 their actual need, and a real batch file of transactions (`data/*.txt`,
-420+ rows — long enough that you can't just eyeball it for problems).
+430 rows — long enough that you can't just eyeball it for problems).
 **None of them tell you what attributes your class needs.** That's
 deliberate — figuring out what data actually matters for *this*
 stakeholder's problem is part of the assignment. Whichever you pick, delete
