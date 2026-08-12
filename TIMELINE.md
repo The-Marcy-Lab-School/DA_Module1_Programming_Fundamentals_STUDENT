@@ -42,7 +42,7 @@ graded skill by Module 15's final project.** This week is your first rep.
 
 ## Day 1 — Sprint planning: choose, read, design (not code)
 
-- Repo created from the template (`GETTING_STARTED.md`), cloned locally.
+- Repo created from the template (`README.md`), cloned locally.
 - `.gitignore`/`LICENSE`/git history confirmed already present.
 - Read all 4 scenarios in `SCENARIOS.md`, pick one, delete the other 3
   data files.
