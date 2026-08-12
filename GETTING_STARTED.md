@@ -47,23 +47,32 @@ git log --oneline
 Confirm `python3 --version` works in this folder before going further — if
 it doesn't, install Python 3 first (see `README.md`).
 
-## Step 4: Design before you code
+## Step 4: Pick your scenario, design before you code
 
-Open `starter/inventory.py` — every class/function already has a signature
-and a docstring explaining what it needs to do; the logic is yours to write.
-Before writing any code: sketch the `Item` class's attributes and read
-through `starter/REFLECTION.md` so you know what your finished script needs
-to be able to explain about itself. Trace through the first 2-3 lines of
-`data/inventory_transactions.txt` by hand — decide what a valid ADD line
-looks like vs. an invalid one — before writing the loop that processes them.
+Read `SCENARIOS.md` and pick **one** of the 4 stakeholder scenarios —
+delete the other 3 data files from `data/` once you've chosen, so it's
+clear which one you're using. Open `starter/inventory.py` — every
+function already has a signature; the class and the logic are yours to
+design and write. Before writing any code: re-read your stakeholder's
+actual words, sketch what your class needs to track and why, and read
+through `starter/REFLECTION.md` so you know what your finished script
+needs to be able to explain about itself. Trace through the first 2-3
+lines of your data file by hand — decide what a valid ADD line looks like
+vs. an invalid one — before writing the loop that processes them.
 
 ## Step 5: Do the actual project
 
 See `PROJECT_OVERVIEW.md` for what you're building and why, `README.md` for
 the data, and `TIMELINE.md` for a suggested day-by-day pace. Commit
-incrementally as you go — a `git commit` after the `Item` class works, then
+incrementally as you go — a `git commit` after your class works, then
 another after the batch-processing loop works, not one commit at the very
-end.
+end. Once your script produces `inventory.json`, use `tools/search.html`
+(see that file for how to run it) to interactively confirm your edge cases
+actually did what you think they did.
+
+Don't forget the two deliverables beyond the code itself: `REFLECTION.md`
+(all 4 sections) and a short project deck (6 slides max, including a live
+demo) — see `MVP.md` for exactly what each needs to cover.
 
 **Where's the exact bar for "done," and what are the optional stretch
 goals?** This repo (your own copy) doesn't include `MVP.md` or
