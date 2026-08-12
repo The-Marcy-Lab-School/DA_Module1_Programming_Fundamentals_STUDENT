@@ -1,19 +1,46 @@
-# Recommended Timeline — About 2 Weeks
+# Recommended Timeline — 1 Week, Run as a Sprint
 
-This is a **suggested pace, not a rigid schedule** — roughly 9-10 working
-days, working backward from what a complete submission needs. This project
-has more open-ended design work than a typical first project (you're
-choosing a scenario and designing your own class), so the pace below
-leaves real room for that instead of assuming it's instant.
+**4 build days, then a demo day.** This isn't just a schedule — it's your
+first real exposure to how professional software teams actually plan
+short-term work: a **sprint**.
 
-> A note on this: you're still early in the program, so we're handing you a
-> ready-made timeline again, same as Module 0. As you get more practice
-> breaking projects into checkpoints yourself, later modules will expect you
-> to set up your own tracking (a GitHub Projects board, a simple issue
-> list, whatever fits) instead of working from a timeline someone else
-> wrote for you.
+## What's a sprint, and why does this project run as one?
 
-## Day 1 — Choose, read, design (not code)
+A sprint is a short, fixed block of time (commonly 1-2 weeks) where a team
+commits to a specific, achievable set of work, builds it, then **stops and
+shows what they built** — a real demo, not a status update. The fixed
+deadline is the point: it forces real decisions about what actually fits,
+instead of scope quietly growing until the "done" date slips. You'll use
+real agile vocabulary this week:
+
+- **Sprint planning** (Day 1) — deciding, up front, what's actually
+  achievable in the time you have. For this project, that decision is
+  already made for you (see `MVP.md`) — but you're still doing the same
+  underlying step every sprint starts with: understanding the goal before
+  you touch any code.
+- **Daily check-in** — at the start of each build day, spend 2 minutes
+  answering three questions for yourself (a real team does this out loud,
+  together, in ~10 minutes total — a "stand-up"): *What did I finish
+  yesterday? What am I doing today? Is anything blocking me?* Write your
+  answers in your terminal log or a scratch note — it's a habit, not a
+  deliverable.
+- **The backlog** — everything real, worth doing, and **deliberately not**
+  in this sprint. `ABOVE_AND_BEYOND.md` *is* this project's backlog: real
+  features (a second search implementation, more edge cases, extending the
+  search tool) that don't fit in a 1-week sprint without cutting something
+  that matters more. A backlog isn't a list of things you failed to do —
+  it's how a team protects a sprint's actual deadline by explicitly
+  deciding what's *not* in scope, on purpose, instead of letting "just one
+  more thing" quietly blow up the schedule.
+- **Sprint review / demo** (Day 5) — you show real, working software to
+  real people (your instructor, maybe classmates), not a status report
+  about what you plan to finish later. Your project deck is this project's
+  sprint review.
+
+This isn't busywork — **`project-management` becomes its own explicitly
+graded skill by Module 15's final project.** This week is your first rep.
+
+## Day 1 — Sprint planning: choose, read, design (not code)
 
 - Repo created from the template (`GETTING_STARTED.md`), cloned locally.
 - `.gitignore`/`LICENSE`/git history confirmed already present.
@@ -21,62 +48,58 @@ leaves real room for that instead of assuming it's instant.
   data files.
 - Sketch your class on paper or in a scratch file: what does *your*
   stakeholder actually need tracked? Why?
+- Skim `MVP.md` (your sprint goal) and `ABOVE_AND_BEYOND.md` (your
+  backlog) so you know the line between them before you start.
 
-## Day 2 — The class, alone
+## Day 2 — Core build: class + validation
 
-- Implement `__init__` and your low-stock-style check, with real
-  docstrings you wrote yourself.
-- Instantiate a couple of your objects by hand in a scratch script and
-  confirm their attributes aren't shared between instances.
-- First commit.
-
-## Day 3-4 — Parsing and validation, in isolation
-
+- Implement your class (`__init__`, your low-stock-style check), with
+  real docstrings you wrote yourself.
 - Implement `read_batch_file` and `validate_line` against a tiny 3-5 line
-  sample (not the full file yet) — get the conditional logic right on a
-  small, controlled input before scaling up.
-- Use a real `try`/`except` for the quantity-type check.
+  sample first — including a real `try`/`except` for the quantity-type
+  check.
+- Commit at least once today — don't wait for "done" to commit.
 
-## Day 5 — Wire it together
+**Daily check-in:** what did you plan yesterday, what are you building
+today, what (if anything) is blocking you?
 
-- Implement `process_transactions`: loop over your real 420+ row data
-  file, build the running collection, handle ADD/REMOVE/SEARCH for real.
+## Day 3 — Integration: the real file, real edge cases
+
+- Implement `process_transactions`: loop over your real 430-row data file,
+  build the running collection, handle ADD/REMOVE/SEARCH for real.
+- Find and handle **at least 3 distinct** planted edge cases (see `data/
+  SOURCE.md`) — real ones, with specific messages, not crashes.
 - Commit.
 
 **Exit criterion:** at least 2 real commits pushed to GitHub by end of Day
-5 — `git log --oneline` should already tell a real story.
+3 — `git log --oneline` should already tell a real story.
 
-## Day 6 — Hunt for edge cases on purpose
+**Daily check-in.**
 
-- Run your script against the real data file. Find **at least 3 distinct**
-  planted problems (see `data/SOURCE.md`) and make each fail gracefully
-  with a real, specific message instead of crashing.
-- Commit.
-
-## Day 7 — Output, export, and interactive check
+## Day 4 — Polish: output, export, reflection
 
 - Implement `find_item` and `print_summary`.
-- Implement and call `export_to_json`; open `tools/search.html` and use it
-  to actually confirm your 3+ edge cases did what you think they did.
-
-## Day 8 — Reflection
-
+- Implement and call `export_to_json`; use `tools/search.html` to actually
+  confirm your 3+ edge cases did what you think they did.
 - Write all 4 required pieces of `REFLECTION.md`, including the
   AI-assisted edge-case-discovery reflection.
-
-## Day 9 — Deck and polish
-
-- Build your 6-slide-max project deck (scenario/stakeholder, class design
-  decisions, batch-processing approach, a live demo of your edge cases).
 - Clean sweep: remove leftover debugging `print()`s and unused variables.
-- Confirm `README.md` is accurate and the repo is actually public.
 - Final commit(s) pushed — `git log --oneline` should show 3+ commits
   total, each with a real message.
 
-## Day 10 (buffer) — Above & Beyond or finish up
+**Daily check-in.**
 
-- Catch-up day if you're behind, or Above & Beyond work if you're not —
-  see `ABOVE_AND_BEYOND.md` on the template's `project-scope` branch.
+## Day 5 — Sprint review: build your deck and demo
+
+- Build your 6-slide-max project deck: your scenario/stakeholder, your
+  class design decisions and why, your batch-processing approach, and a
+  **live demo (or real screenshots) of your 3+ edge cases actually being
+  handled.**
+- Present it like a real sprint review — you're showing working software,
+  not describing what you're about to build.
+- Confirm `README.md` is accurate and the repo is actually public.
 
 **Exit criterion:** everything in `MVP.md` is done and pushed, including
-the deck. That's the whole submission.
+the deck. That's the whole sprint. Backlog items (`ABOVE_AND_BEYOND.md`)
+are exactly that — backlog. Picking one up after Day 5, if you have real
+time, is a bonus sprint, not a requirement of this one.
