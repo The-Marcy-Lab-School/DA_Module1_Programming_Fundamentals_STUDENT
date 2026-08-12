@@ -44,6 +44,13 @@ cat LICENSE    # should show the MIT License text
 git log --oneline
 ```
 
+**One real edit still needed, easy to miss since the file already
+exists:** open `LICENSE` and replace the placeholder `[YOUR NAME]` on the
+copyright line with your actual name — a public repo with a literal
+"[YOUR NAME]" left in it is a small but real tell nobody actually looked
+at the file. Commit that change (`git commit -m "add my name to LICENSE"`)
+alongside your other early commits.
+
 Confirm `python3 --version` works in this folder before going further — if
 it doesn't, install Python 3 first (see `README.md`).
 
