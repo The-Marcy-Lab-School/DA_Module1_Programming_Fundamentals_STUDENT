@@ -26,6 +26,12 @@ This is done when all of the following are true:
   that's present but the wrong type (a quantity field that isn't actually
   a number, e.g.) — see `starter/inventory.py`'s note on why this is
   usually cleaner than checking `.isdigit()` first.
+- [ ] **`find_item` implemented** — a real search by name, genuinely one of
+  a linear scan or a dict lookup (this is the function your `REFLECTION.md`
+  Big-O comparison needs to be about).
+- [ ] **`print_summary` implemented** — a formatted inventory summary
+  (every item, its key details) and a separate low-stock alert list
+  containing only the items your low-stock check flags.
 - [ ] **`export_to_json` implemented and actually called** — writes
   `inventory.json`, which `tools/search.html` (given code — see that file)
   reads. Use it to interactively confirm your 3+ edge cases actually did
