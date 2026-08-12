@@ -10,10 +10,21 @@ installed: `pip install pandas`), then in REFLECTION.md write 1-2 sentences
 comparing this to your own inventory summary: does it agree? What did
 pandas get "for free" that you had to write a loop for yourself?
 """
+import glob
+
 import pandas as pd
 
+# Finds whichever scenario's data file you kept -- see SCENARIOS.md.
+data_files = glob.glob("data/*_transactions.txt")
+if len(data_files) != 1:
+    raise SystemExit(
+        f"Expected exactly one data/*_transactions.txt file, found "
+        f"{len(data_files)}: {data_files}. Did you delete the other 3 "
+        f"scenarios' data files after choosing yours (see SCENARIOS.md)?"
+    )
+
 ROWS = []
-with open("data/inventory_transactions.txt") as f:
+with open(data_files[0]) as f:
     for line in f:
         line = line.strip()
         if not line:
