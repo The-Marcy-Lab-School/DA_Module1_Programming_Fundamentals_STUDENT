@@ -4,7 +4,7 @@
 why, then `GETTING_STARTED.md` for turning this template into your own repo
 step by step.
 
-**Due:** 1.5 weeks. See `TIMELINE.md` for a suggested day-by-day pace.
+**Due:** 1.5-2 weeks. See `TIMELINE.md` for a suggested day-by-day pace.
 
 ## Setup
 
@@ -24,18 +24,21 @@ those from scratch would just be friction. You will still need:
 
 See `GETTING_STARTED.md` for turning this template into your own repo.
 
-## The data
+## Your scenario and data
 
-Everyone in this cohort tests against the same file — already included at
-`data/inventory_transactions.txt`, no download needed. See `data/SOURCE.md`
-for where the item names came from and, importantly, the deliberate edge
-cases built into this exact file that your script needs to survive.
+See `SCENARIOS.md` and pick **one** of the 4 stakeholder scenarios. Each
+one's data file is already included at `data/<scenario>_transactions.txt`
+(420+ rows, no download needed) — delete the other 3 once you've chosen.
+See `data/SOURCE.md` for what's deliberately planted in every file and why
+it's long enough that you can't just eyeball it for problems.
 
 ## What to do
 
-See `starter/inventory.py` — the class/function structure and docstrings
-are given, the logic isn't; every `# TODO:` is yours to fill in. `starter/
+See `starter/inventory.py` — you design the class yourself (see
+`SCENARIOS.md`); the function structure is given but the logic isn't, and
+you write your own docstrings (one example is given as a model). `starter/
 REFLECTION.md` is the required written piece once your script runs.
-`TIMELINE.md` has a suggested pace. Your instructor shares the full
-step-by-step checklist and grading rubric separately through the
+`tools/search.html` is a given interactive tool for double-checking your
+own results. `TIMELINE.md` has a suggested pace. Your instructor shares
+the full step-by-step checklist and grading rubric separately through the
 classroom — not this repo.
