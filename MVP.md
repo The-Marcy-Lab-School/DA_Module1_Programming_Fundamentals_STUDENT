@@ -54,7 +54,8 @@ This is done when all of the following are true:
   unused variables or imports left in the final version.
 - [ ] **GitHub repo.** Public, contains your inventory script,
   `REFLECTION.md`, `inventory.json`, and a `README.md`, with at least
-  **2 real, well-messaged commits** — not one "final" dump.
+  **3 real, well-messaged commits** — not one "final" dump. (Design, core
+  build, and polish are 3 natural commit points — see `TIMELINE.md`.)
 
 That's the whole bar. Design your class and your standalone functions
 before writing the batch-file loop — decide what belongs on the object
