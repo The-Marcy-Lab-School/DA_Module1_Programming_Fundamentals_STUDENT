@@ -1,0 +1,16 @@
+ADD,Pride and Prejudice,5,Romance
+ADD,Frankenstein,3,Gothic
+ADD,Dracula,2,Gothic
+ADD,Moby-Dick,4,Adventure
+ADD,The Time Machine,6,Science Fiction
+ADD,Alice's Adventures in Wonderland,8,Fantasy
+ADD,A Tale of Two Cities,1,Classic
+ADD,Little Women,7,Classic
+
+REMOVE,Dracula,1
+REMOVE,A Tale of Two Cities,1
+SEARCH,Moby-Dick
+SEARCH,The Odyssey
+REMOVE,The Odyssey,1
+ADD,Frankenstein,2,Gothic
+ADD,Sherlock Holmes,,Mystery
