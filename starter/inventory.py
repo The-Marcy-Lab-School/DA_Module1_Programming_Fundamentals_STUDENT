@@ -9,24 +9,27 @@ here, and that's on purpose. See ../MVP.md for the full required scope.
 import json
 
 
-# TODO: define a class representing one inventory item for your chosen
-# scenario. Re-read your stakeholder's actual words in SCENARIOS.md --
-# what would you genuinely need to track to answer their real questions?
-# At minimum you'll need a name and a quantity, but don't stop there just
-# because that's the minimum -- design for what your specific stakeholder
-# actually asked about.
-#
-# class YourClassName:
-#     def __init__(self, ...):
-#         # TODO: write a real docstring for every method you add below --
-#         # see read_batch_file()'s docstring further down for the level
-#         # of detail expected. This comment block is scaffolding, not a
-#         # docstring itself -- delete it once your class is written.
-#         pass
-#
-#     def is_low_stock(self):
-#         # TODO
-#         pass
+class YourInventoryItem:
+    """
+    TODO: rename this class to something that fits your scenario, and
+    write a real docstring -- what does one of these represent? Design
+    this around what your stakeholder in SCENARIOS.md actually needs
+    tracked. At minimum you'll need something to identify the item and a
+    quantity, but don't stop at the minimum just because it's the
+    minimum -- design for what your stakeholder specifically asked about.
+    """
+
+    def __init__(self):
+        # TODO: add your own parameters here (self, plus whatever
+        # attributes you're tracking) and store each one as an instance
+        # attribute (self.whatever = whatever).
+        pass
+
+    def is_low_stock(self):
+        """TODO: write your own docstring."""
+        # TODO: implement -- decide what "low" reasonably means for your
+        # scenario and return True/False.
+        pass
 
 
 def read_batch_file(filepath):
@@ -42,11 +45,9 @@ def read_batch_file(filepath):
 
 
 def validate_line(line):
-    """
-    # TODO: write your own docstring: what makes a line valid for each of
-    # ADD/REMOVE/SEARCH? What do you return for a valid line vs. an
-    # invalid one?
-    """
+    """TODO: write your own docstring -- what makes a line valid for each
+    of ADD/REMOVE/SEARCH? What do you return for a valid line vs. an
+    invalid one?"""
     # TODO: implement. One real design choice worth making deliberately:
     # a value can be *present* but the wrong *type* -- a quantity field
     # that isn't actually a number, for instance. A try/except around the
@@ -58,9 +59,7 @@ def validate_line(line):
 
 
 def process_transactions(lines):
-    """
-    # TODO: write your own docstring.
-    """
+    """TODO: write your own docstring."""
     # TODO: implement. Return the collection you built -- don't print
     # from inside this function, that's print_summary's job, not this
     # one's.
@@ -68,28 +67,22 @@ def process_transactions(lines):
 
 
 def find_item(items, name):
-    """
-    # TODO: write your own docstring.
-    """
+    """TODO: write your own docstring."""
     # TODO: implement
     pass
 
 
 def export_to_json(items, filepath="inventory.json"):
-    """
-    # TODO: write your own docstring. This file is what tools/search.html
-    # reads to power the interactive search tool (see MVP.md) -- you'll
-    # need to turn each of your objects into something JSON can
-    # represent (a dict) before json.dump can write it out.
-    """
+    """TODO: write your own docstring. This file is what tools/
+    search.html reads to power the interactive search tool (see
+    MVP.md) -- you'll need to turn each of your objects into something
+    JSON can represent (a dict) before json.dump can write it out."""
     # TODO: implement
     pass
 
 
 def print_summary(items):
-    """
-    # TODO: write your own docstring.
-    """
+    """TODO: write your own docstring."""
     # TODO: implement. This one really is just for printing to the
     # screen -- no meaningful return value needed here.
     pass
