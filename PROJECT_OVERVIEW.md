@@ -6,7 +6,7 @@ Pick one of 4 real stakeholder scenarios (`SCENARIOS.md`), then build a
 plain-Python command-line inventory tracker for them: **design your own
 class** for tracking one inventory item (there's no single right answer —
 figure out what your specific stakeholder actually needs to track), write
-standalone functions to read and validate a real 400+ row batch file of
+standalone functions to read and validate a real 430-row batch file of
 ADD/REMOVE/SEARCH transactions, handle at least 3 distinct kinds of
 messy/malformed input without crashing, export your results so you can
 interactively search and double-check your own work, and close it out
@@ -42,7 +42,7 @@ with SQL for real data work.
   edge-case-discovery reflection.
 - A short **project deck** (6 slides max, including a live demo of your
   edge-case handling).
-- A clean submission and at least **2 well-messaged commits**.
+- A clean submission and at least **3 well-messaged commits**.
 
 ## Skills you'll practice
 
@@ -55,7 +55,7 @@ with SQL for real data work.
 - **Algorithmic complexity (Big-O)** — reasoning about how your own code's
   runtime changes as the data it works on grows.
 - **Attention to detail** — finding and handling real problems in a
-  400+ row file you can't just eyeball, and presenting proof you did.
+  430-row file you can't just eyeball, and presenting proof you did.
 
 ## Timeline
 
