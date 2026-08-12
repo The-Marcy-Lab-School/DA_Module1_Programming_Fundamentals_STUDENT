@@ -1,9 +1,11 @@
 # Above & Beyond
 
-Finished the MVP with time to spare? Each of these previews a skill a later
-module assumes you already have, or pushes something you already built
-further. Pick one or two — don't feel obligated to do all of them. Files
-for the given-code ones live in `above_and_beyond/`.
+**This is this project's backlog** (see `TIMELINE.md`'s sprint framing) —
+real, worth-doing work that's deliberately not part of the 1-week sprint's
+scope. Finished the MVP with time to spare? Each of these previews a skill
+a later module assumes you already have, or pushes something you already
+built further. Pick one or two — don't feel obligated to do all of them.
+Files for the given-code ones live in `above_and_beyond/`.
 
 - **Implement both search approaches and actually compare them.** Add a
   second lookup function using the *other* data structure from the one you
