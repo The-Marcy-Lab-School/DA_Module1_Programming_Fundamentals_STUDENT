@@ -62,5 +62,5 @@ Before writing any code: read your chosen stakeholder's actual words above
 again. What are they really asking for? What would you need to track to
 answer their real questions (not just "what fields does a spreadsheet
 usually have")? That's the design work `starter/inventory.py` asks you to
-do yourself — see `MVP.md` for the actual bar, and `GETTING_STARTED.md` for
-where to start.
+do yourself — see `MVP.md` for the actual bar, and `README.md` for where
+to start.
