@@ -4,7 +4,9 @@
 why, then `GETTING_STARTED.md` for turning this template into your own repo
 step by step.
 
-**Due:** 1.5-2 weeks. See `TIMELINE.md` for a suggested day-by-day pace.
+**Due:** 1 week, run as a sprint — 4 build days plus a demo day. See
+`TIMELINE.md` for the day-by-day pace and what "sprint"/"backlog" mean
+here.
 
 ## Setup
 
@@ -28,7 +30,7 @@ See `GETTING_STARTED.md` for turning this template into your own repo.
 
 See `SCENARIOS.md` and pick **one** of the 4 stakeholder scenarios. Each
 one's data file is already included at `data/<scenario>_transactions.txt`
-(420+ rows, no download needed) — delete the other 3 once you've chosen.
+(430 rows, no download needed) — delete the other 3 once you've chosen.
 See `data/SOURCE.md` for what's deliberately planted in every file and why
 it's long enough that you can't just eyeball it for problems.
 
