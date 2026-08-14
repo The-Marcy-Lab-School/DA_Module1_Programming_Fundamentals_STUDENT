@@ -59,7 +59,8 @@ with SQL for real data work.
 
 ## Timeline
 
-See `TIMELINE.md` for a suggested day-by-day pace.
+See `CHECKLIST_TIMELINE.md` for the day-by-day sprint pace and the full
+submission checklist.
 
 ## Where to start
 
