@@ -146,6 +146,15 @@ deck. That's the whole sprint. Backlog items (`ABOVE_AND_BEYOND.md`) are
 exactly that — backlog. Picking one up after Day 5, if you have real time,
 is a bonus sprint, not a requirement of this one.
 
+## After the Day 5 demos: peer code review
+
+Right after demos (or in a separate session), you'll swap repos with a
+small group of classmates — real code, not anonymized, since you'll have
+just watched each other present. You'll review each other's class design
+and edge-case handling as a teammate who has to maintain the code would,
+give real feedback, and reflect on your own design choices afterward. No
+extra prep — just have your repo pushed and public.
+
 ## Above & Beyond
 
 Only the additional items — everything above still applies and isn't
