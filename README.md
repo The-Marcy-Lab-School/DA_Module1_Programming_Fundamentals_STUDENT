@@ -5,8 +5,8 @@ why. This file (`README.md`) is where the step-by-step setup lives — you're
 already in the right place.
 
 **Due:** 1 week, run as a sprint — 4 build days plus a demo day. See
-`TIMELINE.md` for the day-by-day pace and what "sprint"/"backlog" mean
-here.
+`CHECKLIST_TIMELINE.md` for the day-by-day pace, what "sprint"/"backlog"
+mean here, and the full submission checklist.
 
 This repo is a **GitHub template** — a starting point, not something you
 edit directly on Marcy's copy of it.
@@ -96,7 +96,7 @@ REFLECTION.md` is the required written piece once your script runs.
 `tools/search.html` is a given interactive tool for double-checking your
 own results — once your script produces `inventory.json`, use it to
 interactively confirm your edge cases actually did what you think they
-did. `TIMELINE.md` has a suggested pace. Commit incrementally as you go —
+did. `CHECKLIST_TIMELINE.md` has the suggested pace. Commit incrementally as you go —
 a `git commit` after your class works, then another after the
 batch-processing loop works, not one commit at the very end.
 
