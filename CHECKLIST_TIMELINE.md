@@ -138,7 +138,16 @@ today, what (if anything) is blocking you?
   cases being handled.
 - [ ] Present it like a real sprint review — showing working software, not
   describing what you're about to build.
-- [ ] `README.md` accurate; repo confirmed **public**.
+- [ ] **Delete `PROJECT_OVERVIEW.md` and `SCENARIOS.md`** — they explain
+  the assignment, not your project; a real portfolio repo shouldn't have
+  "here's what you were asked to build" sitting in it.
+- [ ] **Replace `README.md`'s content with your own real project README**
+  — write it for someone who's never seen this assignment:
+  - **Problem Statement** — the real scenario/stakeholder you chose.
+  - **Approach & Design Decisions** — your class design, why you picked
+    the search/validation approach you did.
+  - **How to Run It** — real setup + usage instructions.
+  - **Reflection** — your Big-O/edge-case takeaways.
 - [ ] Final self-check against this checklist before calling it done.
 
 **Exit criterion:** everything above is done and pushed, including the
