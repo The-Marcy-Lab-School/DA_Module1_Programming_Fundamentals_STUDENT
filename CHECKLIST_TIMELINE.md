@@ -148,6 +148,8 @@ today, what (if anything) is blocking you?
     the search/validation approach you did.
   - **How to Run It** — real setup + usage instructions.
   - **Reflection** — your Big-O/edge-case takeaways.
+- [ ] Final push to GitHub — confirm the repo is actually **public** (open
+  it in a private/incognito browser window to check).
 - [ ] Final self-check against this checklist before calling it done.
 
 **Exit criterion:** everything above is done and pushed, including the
