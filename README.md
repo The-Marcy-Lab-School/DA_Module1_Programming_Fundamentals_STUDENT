@@ -4,7 +4,7 @@
 why. This file (`README.md`) is where the step-by-step setup lives — you're
 already in the right place.
 
-**Due:** 1 week, run as a sprint — 4 build days plus a demo day. See
+**Due:** 4 days, run as a sprint — 3 build days plus a share-out day. See
 `CHECKLIST_TIMELINE.md` for the day-by-day pace, what "sprint"/"backlog"
 mean here, and the full submission checklist.
 
