@@ -34,7 +34,7 @@ real agile vocabulary this week:
   Your project deck is this project's sprint review.
 
 This isn't busywork — **`project-management` becomes its own explicitly
-graded skill by Module 15's final project.** This sprint is your first rep.
+graded skill by Module 13's final project.** This sprint is your first rep.
 
 ## Day 1 — Sprint planning + core build: choose, design, build your class
 
