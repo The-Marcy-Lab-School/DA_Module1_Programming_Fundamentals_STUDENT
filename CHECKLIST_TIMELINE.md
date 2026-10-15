@@ -176,9 +176,10 @@ repeated here, and none of this is required. All five are detailed in
 `ABOVE_AND_BEYOND.md`.
 
 **This section's own given code (`above_and_beyond/`) isn't in your repo
-by default** — it lives on this template's `project-scope` branch, same
-as `MVP.md`/`ABOVE_AND_BEYOND.md`. Ask your instructor for that branch's
-link if you want to pick any of this up.
+by default** — it lives on this template's `project-scope` branch, same as
+`MVP.md`/`ABOVE_AND_BEYOND.md`. To pick any of this up, go back to the
+original template repo you created yours from and switch to its
+`project-scope` branch.
 
 - [ ] Implement a **second** search approach (whichever you didn't use for
   `find_item`) and empirically time both against a scaled-up copy of your
