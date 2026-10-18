@@ -4,9 +4,10 @@ this yourself.
 
 Module 2 introduces pandas for real exploratory data analysis. Here's a
 small, real taste of what the SAME transaction data looks like through
-pandas instead of the plain functions/loops you just wrote by hand. Run it
-(`python3 preview_pandas.py` from the repo root -- you'll need pandas
-installed: `pip install pandas`), then in REFLECTION.md write 1-2 sentences
+pandas instead of the plain functions/loops you just wrote by hand. Save
+this file in your repo's top folder and run `python3 preview_pandas.py`
+there (install pandas first: `pip install pandas`). Then in REFLECTION.md
+write 1-2 sentences
 comparing this to your own inventory summary: does it agree? What did
 pandas get "for free" that you had to write a loop for yourself?
 """

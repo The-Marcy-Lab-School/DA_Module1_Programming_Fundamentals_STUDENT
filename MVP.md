@@ -1,30 +1,43 @@
-# MVP — Minimum Bar
+# MVP: Minimum Bar
 
-Full grading detail (what separates each level) lives in `rubric.md`. This
-is the bar:
+This is the same list as the MVP checklist in the LMS. `RUBRIC.md` has the
+full grading detail. The bar:
 
-- [ ] **Scenario chosen** (`SCENARIOS.md`), the other 3 data files deleted.
-- [ ] **Your own class** — attributes that genuinely fit your stakeholder's
-  need, used consistently (no parallel dicts/lists holding the same data).
-- [ ] **At least 2 standalone functions**, not methods, with real parameters
-  and an explicit `return` (`print_summary` is the one exception).
-- [ ] **Batch processing** — a loop + conditional handles ADD/REMOVE/SEARCH
-  lines from your data file.
-- [ ] **At least 3 distinct edge cases** handled without crashing, each with
-  a specific printed message.
-- [ ] **At least one real `try`/`except`** for a value that's present but
-  the wrong type.
-- [ ] **`find_item` implemented** — a linear scan or a dict lookup.
-- [ ] **`print_summary` implemented** — a formatted summary plus a separate
-  low-stock alert list.
-- [ ] **`export_to_json` implemented and called** — writes `inventory.json`,
-  used with `tools/search.html` to confirm your edge cases.
-- [ ] **Real docstrings you wrote yourself** on every function and method.
-- [ ] **`REFLECTION.md` complete** — edge cases, function scope, Big-O
-  comparison, AI-assisted edge-case discovery.
-- [ ] **A project deck** — 6 slides max, including a live demo of your 3+
-  edge cases actually being handled.
-- [ ] **Clean submission** — no leftover debug `print()`s or unused code.
-- [ ] **GitHub repo** — public, at least 3 real, well-messaged commits.
+- [ ] **Scenario chosen** from `SCENARIOS.md`, with the other 3 data
+  files deleted.
+- [ ] **Assumptions written down** (Question, Assumption, Risk) in
+  `REFLECTION.md`, including what counts as low stock.
+- [ ] **Your own class**, with attributes that fit your stakeholder's
+  need, used throughout (no separate lists or dicts holding the same
+  data).
+- [ ] **At least 2 standalone functions** (not methods) with clear
+  parameters and a `return`. `print_summary` is the only exception.
+- [ ] **Batch processing:** a loop applies the `ADD`, `REMOVE`, and
+  `SEARCH` lines from your data file.
+- [ ] **At least 3 different types of edge case** handled without
+  crashing. Each one is skipped with a specific printed reason or fixed on
+  purpose.
+- [ ] **At least one `try`/`except`** for a quantity that isn't a number.
+- [ ] **`find_item`** uses a linear scan or a dict lookup.
+- [ ] **`print_summary`** prints every item and a separate low-stock list.
+- [ ] **`export_to_json`** writes `inventory.json` and is called by your
+  script.
+- [ ] **Docstrings you wrote yourself** on every function and method.
+- [ ] **`REFLECTION.md` complete:** all six sections.
+- [ ] **Your own `README.md`**, covering:
+  - title and summary
+  - business scenario
+  - what it does
+  - findings
+  - key decisions
+  - how to run it
+  - reflection
+- [ ] **Clean submission:** no leftover `TODO`s, debug `print()`s, or
+  unused code. `CHECKLIST_TIMELINE.md`, `RUBRIC.md`, `SCENARIOS.md`, and
+  `PROJECT_OVERVIEW.md` deleted.
+- [ ] **Public GitHub repo** with at least 3 commits with clear messages.
+- [ ] **Day 5 share-out:** a pair repo review and a 90-second PREP
+  walkthrough. Not graded.
 
-See `CHECKLIST_TIMELINE.md` for the day-by-day sequence this bar is built in.
+`tools/search.html` is optional. See `CHECKLIST_TIMELINE.md` for the
+day-by-day plan.
