@@ -33,8 +33,9 @@ full grading detail. The bar:
   - how to run it
   - reflection
 - [ ] **Clean submission:** no leftover `TODO`s, debug `print()`s, or
-  unused code. `CHECKLIST_TIMELINE.md`, `RUBRIC.md`, `SCENARIOS.md`, and
-  `PROJECT_OVERVIEW.md` deleted.
+  unused code. School-facing files deleted (`CHECKLIST_TIMELINE.md`,
+  `RUBRIC.md`, `SCENARIOS.md`, `PROJECT_OVERVIEW.md`), and `starter/`
+  renamed to `analysis/`.
 - [ ] **Public GitHub repo** with at least 3 commits with clear messages.
 - [ ] **Day 5 share-out:** a pair repo review and a 90-second PREP
   walkthrough. Not graded.
