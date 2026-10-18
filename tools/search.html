@@ -18,12 +18,14 @@
 </head>
 <body>
 <h1>Inventory Search</h1>
-<p>Given code -- you didn't write this, but you did write the
-<code>inventory.json</code> it reads. Run <code>python3 -m http.server</code>
-from your repo root, then open
-<a href="http://localhost:8000/tools/search.html">this page</a>
-in a browser (opening the file directly won't work -- browsers block a
-local page from loading a local JSON file without a real server).</p>
+<p>Optional, given code. This page reads the <code>inventory.json</code>
+your script writes and filters your items as you type, so you can
+spot-check your results. To open it, run <code>python3 -m http.server</code>
+in your repo's top folder, then go to
+<a href="http://localhost:8000/tools/search.html">http://localhost:8000/tools/search.html</a>.
+Opening the file directly won't work, because browsers block a local page
+from reading a local JSON file. Press Control+C in Terminal to stop the
+server.</p>
 
 <input id="search" type="text" placeholder="Type to search across every field...">
 <div id="count"></div>

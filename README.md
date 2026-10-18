@@ -1,116 +1,103 @@
 # Programming Fundamentals Project: Inventory Tracker
 
-**New here?** Start with `PROJECT_OVERVIEW.md` for what you're building and
-why. This file (`README.md`) is where the step-by-step setup lives — you're
-already in the right place.
+**New here?** Start with `PROJECT_OVERVIEW.md` to see what you're building
+and why. This file walks you through setup.
 
-**Due:** 4 days, run as a sprint — 3 build days plus a share-out day. See
-`CHECKLIST_TIMELINE.md` for the day-by-day pace, what "sprint"/"backlog"
-mean here, and the full submission checklist.
+**Timeline:** a 5-day sprint: 4 build days, then a share-out day. See
+`CHECKLIST_TIMELINE.md` for the day-by-day plan and `RUBRIC.md` for how
+the project is graded.
 
-This repo is a **GitHub template** — a starting point, not something you
-edit directly on Marcy's copy of it.
+This repo is a **GitHub template**: a starting point that you copy, not
+something you edit directly.
 
 ## Getting started
 
 ### Step 1: Get your own copy
 
-On this repo's GitHub page, you'll see two buttons that both sound like "make
-a copy" but do different things:
+This repo's GitHub page has two buttons that both sound like "make a
+copy." Use the right one:
 
-- **"Use this template"** ← use this one. It creates a brand-new, independent
-  repository under *your* GitHub account, with no visible link back to this
-  template. That's what you want for something that becomes part of your
-  portfolio.
-- **"Fork"** — creates a copy that stays linked to this one (GitHub will show
-  "forked from marcy-lab-school/..." on your repo forever). Fork is the right
-  tool when you intend to contribute changes back to the original project —
-  that's not this. Don't use Fork here.
+- **"Use this template"**: use this one. It creates a new, independent
+  repo under your GitHub account, with no link back to this template.
+  That's what you want for a portfolio project.
+- **"Fork"**: don't use this. It creates a copy that stays linked to this
+  one. Forking is for contributing changes back to someone else's
+  project.
 
-Click **"Use this template" → "Create a new repository,"** name it something
-like `inventory-tracker`, keep it **public** (the assignment requires a
-public repo), and create it.
+Click **"Use this template" → "Create a new repository"**. Name it
+something like `inventory-tracker`, keep it **public**, and create it.
 
 ### Step 2: Set up your tools
 
-- **Python 3** — check you have it: open Terminal and run `python3
-  --version`. If it's missing, install from https://python.org (the macOS
-  installer) or via Homebrew (`brew install python3`).
-- **VS Code** — already introduced in Module 0.
-- **[Python Tutor](https://pythontutor.com/)** — free, browser-based. Not
-  required to complete the project, but genuinely useful for stepping
-  through your own loop/function code line by line if you get stuck on why
-  a variable has the value it does.
+- **Python 3:** open Terminal and run `python3 --version`. If it's
+  missing, install it from https://python.org or with Homebrew
+  (`brew install python3`).
+- **VS Code:** you set this up in Module 0.
+- **[Python Tutor](https://pythontutor.com/)** (optional): a free browser
+  tool for stepping through code line by line. Useful when a variable
+  doesn't have the value you expect.
 
-### Step 3: Clone your new repo locally
+### Step 3: Clone your new repo
 
-Open **Terminal**, then on your own new repo's page (not this template),
-click the green **Code** button, copy the HTTPS URL:
+On **your** new repo's page (not this template), click the green **Code**
+button, copy the HTTPS URL, then in Terminal:
 
 ```bash
 git clone <the URL you copied>
 cd <your-repo-name>
 ```
 
-### Step 4: Confirm your environment — it's already set up
+### Step 4: Confirm what's already set up
 
-Unlike Module 0, this template already comes with `.gitignore`, `LICENSE`,
-and a real git history — `git-version-control` isn't the skill being tested
-this module, so there's no reason to rebuild those from scratch. Confirm
-they're there and move straight to the actual project:
+This template already includes `.gitignore`, `LICENSE`, and a git
+history. Check that they're there:
 
 ```bash
-ls -a          # should show .gitignore among the files
+ls -a          # .gitignore should be in the list
 cat LICENSE    # should show the MIT License text
 git log --oneline
 ```
 
-**One real edit still needed, easy to miss since the file already
-exists:** open `LICENSE` and replace the placeholder `[YOUR NAME]` on the
-copyright line with your actual name — a public repo with a literal
-"[YOUR NAME]" left in it is a small but real tell nobody actually looked
-at the file. Commit that change (`git commit -m "add my name to LICENSE"`)
-alongside your other early commits.
+Open `LICENSE` and replace `[YOUR NAME]` on the copyright line with your
+name. Then commit it:
+
+```bash
+git add LICENSE
+git commit -m "add my name to LICENSE"
+```
 
 ## Your scenario and data
 
-See `SCENARIOS.md` and pick **one** of the 4 stakeholder scenarios. Each
-one's data file is already included at `data/<scenario>_transactions.txt`
-(430 rows, no download needed) — delete the other 3 once you've chosen.
-See `data/SOURCE.md` for what's deliberately planted in every file and why
-it's long enough that you can't just eyeball it for problems.
+Read `SCENARIOS.md` and pick **one** of the 4 stakeholders. Each one's
+data file is already in `data/`. Delete the other 3 once you've chosen.
+`data/SOURCE.md` lists the edge cases planted in every file.
 
-Before writing any code: re-read your stakeholder's actual words, sketch
-what your class needs to track and why, and read through `starter/
-REFLECTION.md` so you know what your finished script needs to be able to
-explain about itself. Trace through the first 2-3 lines of your data file
-by hand — decide what a valid ADD line looks like vs. an invalid one —
-before writing the loop that processes them.
+Before you write code:
+
+1. Re-read your stakeholder's words and sketch what your class needs to
+   track.
+2. Write down your assumptions (QAR) in `starter/REFLECTION.md`.
+3. Trace the first 3 lines of your data file by hand.
 
 ## What to do
 
-See `starter/inventory.py` — you design the class yourself (see
-`SCENARIOS.md`); the function structure is given but the logic isn't, and
-you write your own docstrings (one example is given as a model). `starter/
-REFLECTION.md` is the required written piece once your script runs.
-`tools/search.html` is a given interactive tool for double-checking your
-own results — once your script produces `inventory.json`, use it to
-interactively confirm your edge cases actually did what you think they
-did. `CHECKLIST_TIMELINE.md` has the suggested pace. Commit incrementally as you go —
-a `git commit` after your class works, then another after the
-batch-processing loop works, not one commit at the very end.
+- `starter/inventory.py` is your script. You design the class. The
+  function names are given, but you write the logic and the docstrings.
+  `read_batch_file`'s docstring is your model.
+- `starter/REFLECTION.md` is the written part, filled in once your script
+  runs.
+- Run your script from the repo's top folder:
+  `python3 starter/inventory.py`
+- Commit as you go: after your class works, after validation works, and
+  after the full file runs. Don't save it all for one commit at the end.
+- `tools/search.html` is optional. See Day 4 of `CHECKLIST_TIMELINE.md`.
 
-Don't forget the two deliverables beyond the code itself: `REFLECTION.md`
-(all 4 sections) and a short project deck (6 slides max, including a live
-demo). Your instructor shares the full step-by-step checklist and grading
-rubric — including exactly what each of these needs to cover — separately
-through the classroom, not this repo.
+## Where's the exact bar for "done"?
 
-**Where's the exact bar for "done," and what are the optional stretch
-goals?** This repo (your own copy) doesn't include `MVP.md` (your
-**M**inimum **V**iable **P**roduct — the required baseline) or
-`ABOVE_AND_BEYOND.md` on purpose — they're not something to keep sitting
-in your portfolio repo. Find them on the original template repo you
-created yours from — switch to its `project-scope` branch (on the
-*template's* GitHub page, not your own copy) — or use the MVP checklist in
-the LMS, which covers the same ground.
+Use the **MVP checklist in the LMS**. The same list is in `MVP.md` on the
+original template's `project-scope` branch: go to the template on GitHub
+and switch branches. Optional stretch work is in the Above & Beyond
+section at the bottom of `CHECKLIST_TIMELINE.md`.
+
+When you finish, you'll replace this README with your own. Day 4 of the
+checklist lists what to include.
