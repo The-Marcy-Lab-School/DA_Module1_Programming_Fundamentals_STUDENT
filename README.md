@@ -1,103 +1,115 @@
 # Programming Fundamentals Project: Inventory Tracker
 
-**New here?** Start with `PROJECT_OVERVIEW.md` to see what you're building
-and why. This file walks you through setup.
+**Replace this README before submitting your final project with:**
 
-**Timeline:** a 5-day sprint: 4 build days, then a share-out day. See
-`CHECKLIST_TIMELINE.md` for the day-by-day plan and `RUBRIC.md` for how
-the project is graded.
+- **Title and one-line summary:** what you built and for whom.
+- **Business scenario:** your stakeholder, their problem, and why it
+  matters.
+- **What it does:** what your script does with the transaction file.
+- **Findings:** what your real run showed, such as how many lines were
+  skipped and why, and which items are low on stock.
+- **Key decisions:** your class attributes and why, your main assumption,
+  and your search approach with its Big-O.
+- **How to run it:** the exact command.
+- **Reflection:** 2-3 bullets on what you learned and what you'd improve,
+  linking to `analysis/REFLECTION.md`.
 
-This repo is a **GitHub template**: a starting point that you copy, not
-something you edit directly.
+Write it for an employer who has never seen this assignment.
 
-## Getting started
+---
 
-### Step 1: Get your own copy
+## Setup
 
-This repo's GitHub page has two buttons that both sound like "make a
-copy." Use the right one:
+### 1. Start in a new folder
 
-- **"Use this template"**: use this one. It creates a new, independent
-  repo under your GitHub account, with no link back to this template.
-  That's what you want for a portfolio project.
-- **"Fork"**: don't use this. It creates a copy that stays linked to this
-  one. Forking is for contributing changes back to someone else's
-  project.
+Work in a folder that is **not** inside an existing git repo. Check with:
 
-Click **"Use this template" → "Create a new repository"**. Name it
-something like `inventory-tracker`, keep it **public**, and create it.
+```bash
+git status
+```
 
-### Step 2: Set up your tools
+You want to see `fatal: not a git repository`. If you see a branch name
+instead, `cd` somewhere else first, such as a new `marcy-projects` folder.
 
-- **Python 3:** open Terminal and run `python3 --version`. If it's
-  missing, install it from https://python.org or with Homebrew
-  (`brew install python3`).
-- **VS Code:** you set this up in Module 0.
-- **[Python Tutor](https://pythontutor.com/)** (optional): a free browser
-  tool for stepping through code line by line. Useful when a variable
-  doesn't have the value you expect.
+### 2. Use the template, not Fork
 
-### Step 3: Clone your new repo
+On this repo's GitHub page, click **"Use this template" → "Create a new
+repository."** Don't click **Fork**: a fork stays linked to Marcy's repo,
+and this project is yours. Name it something like `inventory-tracker` and
+keep it **public**.
 
-On **your** new repo's page (not this template), click the green **Code**
-button, copy the HTTPS URL, then in Terminal:
+### 3. Clone your new repo
+
+From **your** new repo's page (not the template), copy the HTTPS URL from
+the green **Code** button:
 
 ```bash
 git clone <the URL you copied>
 cd <your-repo-name>
 ```
 
-### Step 4: Confirm what's already set up
+### 4. Check `.gitignore`
 
-This template already includes `.gitignore`, `LICENSE`, and a git
-history. Check that they're there:
+Your repo already has a `.gitignore`. Confirm it has these lines, or create
+the file with them if it's missing:
 
-```bash
-ls -a          # .gitignore should be in the list
-cat LICENSE    # should show the MIT License text
-git log --oneline
+```
+.DS_Store
+.vscode/
+__pycache__/
+*.pyc
+.venv/
+venv/
 ```
 
-Open `LICENSE` and replace `[YOUR NAME]` on the copyright line with your
-name. Then commit it:
+- `.DS_Store`: Mac folder files that have nothing to do with your project.
+- `.vscode/`: your personal VS Code settings.
+- `__pycache__/` and `*.pyc`: files Python generates when it runs your
+  code.
+- `.venv/` and `venv/`: a Python virtual environment, if you make one to
+  install pandas for Above & Beyond.
+
+Don't ignore `inventory.json`. It's your script's output, and it's part of
+your project.
+
+### 5. Put your name on the LICENSE
+
+`LICENSE` is the MIT License, which lets others reuse your code with
+credit. Open it and replace `[YOUR NAME]` with your name, then commit:
 
 ```bash
 git add LICENSE
 git commit -m "add my name to LICENSE"
 ```
 
-## Your scenario and data
+## The project
 
-Read `SCENARIOS.md` and pick **one** of the 4 stakeholders. Each one's
-data file is already in `data/`. Delete the other 3 once you've chosen.
-`data/SOURCE.md` lists the edge cases planted in every file.
+- Pick your stakeholder in `SCENARIOS.md` and delete the other 3 data
+  files in `data/`.
+- Follow `CHECKLIST_TIMELINE.md` day by day. `RUBRIC.md` shows how it's
+  graded. The MVP checklist is also in the LMS.
+- Write your code in `starter/inventory.py` and your reflection in
+  `starter/REFLECTION.md`.
+- Run your script from the repo's **top folder**, not from inside
+  `starter/`, or Python won't find `data/`:
 
-Before you write code:
+  ```bash
+  python3 starter/inventory.py
+  ```
 
-1. Re-read your stakeholder's words and sketch what your class needs to
-   track.
-2. Write down your assumptions (QAR) in `starter/REFLECTION.md`.
-3. Trace the first 3 lines of your data file by hand.
+- Commit as you go, not all at the end.
 
-## What to do
+## Before you submit
 
-- `starter/inventory.py` is your script. You design the class. The
-  function names are given, but you write the logic and the docstrings.
-  `read_batch_file`'s docstring is your model.
-- `starter/REFLECTION.md` is the written part, filled in once your script
-  runs.
-- Run your script from the repo's top folder:
-  `python3 starter/inventory.py`
-- Commit as you go: after your class works, after validation works, and
-  after the full file runs. Don't save it all for one commit at the end.
-- `tools/search.html` is optional. See Day 4 of `CHECKLIST_TIMELINE.md`.
+Your final repo is for employers, not for school. Before your final push:
 
-## Where's the exact bar for "done"?
+- Delete `CHECKLIST_TIMELINE.md`, `RUBRIC.md`, `SCENARIOS.md`, and
+  `PROJECT_OVERVIEW.md`. They're school-facing and stay in the LMS.
+- Rename the `starter` folder to `analysis`:
 
-Use the **MVP checklist in the LMS**. The same list is in `MVP.md` on the
-original template's `project-scope` branch: go to the template on GitHub
-and switch branches. Optional stretch work is in the Above & Beyond
-section at the bottom of `CHECKLIST_TIMELINE.md`.
+  ```bash
+  git mv starter analysis
+  ```
 
-When you finish, you'll replace this README with your own. Day 4 of the
-checklist lists what to include.
+  Then run it with `python3 analysis/inventory.py`.
+- Replace this README with your own, using the sections at the top.
