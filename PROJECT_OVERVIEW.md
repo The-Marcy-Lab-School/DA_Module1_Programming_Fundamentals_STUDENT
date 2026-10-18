@@ -32,7 +32,8 @@ you'll combine it with SQL.
 - A **public GitHub repo** created with "Use this template" (not Fork).
 - One scenario chosen from `SCENARIOS.md`, with the other 3 data files
   deleted.
-- `starter/inventory.py` complete. It needs:
+- `starter/inventory.py` complete (renamed to `analysis/` before your
+  final push). It needs:
   - your own class and the batch-file functions
   - docstrings you wrote yourself
   - at least one `try`/`except`

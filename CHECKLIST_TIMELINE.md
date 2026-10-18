@@ -110,11 +110,13 @@ teams plan their work this way. This project is your first sprint.
     assumption, and your search approach with its Big-O.
   - **How to run it:** the exact command.
   - **Reflection:** 2 or 3 bullets on what you learned and what you'd
-    improve next. Link to `starter/REFLECTION.md` for the full version.
+    improve next. Link to `analysis/REFLECTION.md` for the full version.
 - [ ] Delete `CHECKLIST_TIMELINE.md` (this file), `RUBRIC.md`,
-  `SCENARIOS.md`, and `PROJECT_OVERVIEW.md`. They describe the assignment,
-  not your project, and don't belong in a portfolio repo. The checklist
-  and rubric stay available in the LMS.
+  `SCENARIOS.md`, and `PROJECT_OVERVIEW.md`. They're school-facing, not
+  employer-facing, and stay available in the LMS.
+- [ ] Rename the `starter` folder to `analysis` with
+  `git mv starter analysis`. Then run `python3 analysis/inventory.py` once
+  to confirm it still works.
 - [ ] Final push. Open your repo in a private browser window to confirm
   it's public.
 

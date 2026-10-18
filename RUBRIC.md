@@ -78,7 +78,7 @@ and using AI to find more problems without trusting it blindly.*
 | Level | Points | Criteria |
 |---|---|---|
 | **Exceeds** | 5 | Completed the `debug_challenge.py` exercise: found and named all 3 bugs at the exact line, fixed them, and confirmed the corrected output (Above & Beyond). |
-| **Meets** | 4 | All 3: (1) no leftover debug `print()`s, `TODO`s, or unused variables; (2) `REFLECTION.md` lists 3 different edge cases with the exact line and what the code does, and the README's "Findings" section reports what the real run printed (e.g. how many lines were skipped and why); (3) the "AI-assisted edge-case discovery" section names a specific prompt **and** a specific check the student would run before trusting the suggestions. "Ask AI for edge cases" with no check doesn't meet this bar. |
+| **Meets** | 4 | All 3: (1) no leftover debug `print()`s, `TODO`s, or unused variables, school-facing files removed, and `starter/` renamed to `analysis/`; (2) `REFLECTION.md` lists 3 different edge cases with the exact line and what the code does, and the README's "Findings" section reports what the real run printed (e.g. how many lines were skipped and why); (3) the "AI-assisted edge-case discovery" section names a specific prompt **and** a specific check the student would run before trusting the suggestions. "Ask AI for edge cases" with no check doesn't meet this bar. |
 | **Approaching** | 2 | 1-2 of the 3 criteria are met. For example, edge cases are handled but the README's findings don't show it, or the AI section names a prompt but no check. |
 | **Below Expectations** | 1 | Leftover debug code, fewer than 3 different edge cases, or generic AI answers ("AI would help me find bugs"). |
 
