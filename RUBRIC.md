@@ -78,9 +78,24 @@ and using AI to find more problems without trusting it blindly.*
 | Level | Points | Criteria |
 |---|---|---|
 | **Exceeds** | 5 | Completed the `debug_challenge.py` exercise: found and named all 3 bugs at the exact line, fixed them, and confirmed the corrected output (Above & Beyond). |
-| **Meets** | 4 | All 3: (1) no leftover debug `print()`s, `TODO`s, or unused variables; (2) `REFLECTION.md` lists 3 different edge cases with the exact line and what the code does, and the README's "Findings" section reports what the real run printed (e.g. how many lines were skipped and why); (3) the two AI sections in `REFLECTION.md` name a specific prompt **and** a specific check the student ran or would run, plus what the check showed. "Ask AI for edge cases" with no check doesn't meet this bar. |
-| **Approaching** | 2 | 1-2 of the 3 criteria are met. For example, edge cases are handled but the README's findings don't show it, or the AI sections name a prompt but no check. |
+| **Meets** | 4 | All 3: (1) no leftover debug `print()`s, `TODO`s, or unused variables; (2) `REFLECTION.md` lists 3 different edge cases with the exact line and what the code does, and the README's "Findings" section reports what the real run printed (e.g. how many lines were skipped and why); (3) the "AI-assisted edge-case discovery" section names a specific prompt **and** a specific check the student would run before trusting the suggestions. "Ask AI for edge cases" with no check doesn't meet this bar. |
+| **Approaching** | 2 | 1-2 of the 3 criteria are met. For example, edge cases are handled but the README's findings don't show it, or the AI section names a prompt but no check. |
 | **Below Expectations** | 1 | Leftover debug code, fewer than 3 different edge cases, or generic AI answers ("AI would help me find bugs"). |
+
+## Reflection AI line (formative)
+
+*Did you ask the AI well, and check what it gave you?* This covers
+`REFLECTION.md`'s "One real AI prompt, checked" section. It's scored and
+you get feedback on it, but it doesn't count toward the five skill scores
+above. Didn't use AI? You can still earn Meets: write the prompt you would
+have used, label it "not sent," and run the same check on your own code.
+
+| Level | Points | Criteria |
+|---|---|---|
+| **Exceeds** | 5 | Meets, plus you show a second version of the prompt and say what you changed and why (compare and optimize). Or your check caught a real flaw in the AI's answer, and you explain what you fixed. |
+| **Meets** | 4 | One real prompt from your sprint, pasted word for word. You name at least one technique it uses and point to where it appears in the prompt. You show what came back, trimmed but not reworded. You checked it one concrete way: a case you worked by hand, a test you wrote, or re-running on your data file. You say what the check showed. |
+| **Approaching** | 2 | The prompt is pasted, but the technique is named without pointing to where it shows up. Or the check is vague, such as "it looked right" or "it ran." Or the prompt was clearly rewritten after the fact. |
+| **Below Expectations** | 1 | No prompt. Or a prompt with no output and no check. Or the AI's answer is accepted with no verification at all. |
 
 ## Common mistakes that cost points
 
