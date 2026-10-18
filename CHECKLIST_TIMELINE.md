@@ -175,8 +175,9 @@ copy the file you need.
   items at the top. Note what you changed in `REFLECTION.md`.
   Start here: [MDN: JavaScript first steps](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting)
   and [MDN: `Array.prototype.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
-- [ ] **Preview Module 2 with pandas.** Run
-  `above_and_beyond/preview_pandas.py` (install pandas first with
+- [ ] **Preview Module 2 with pandas.** Copy
+  `above_and_beyond/preview_pandas.py` into your repo's top folder and run
+  `python3 preview_pandas.py` (install pandas first with
   `pip install pandas`). In `REFLECTION.md`, write 1-2 sentences comparing
   its output to your own summary. What did pandas do with the bad lines
   that your code handled differently?
