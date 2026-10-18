@@ -1,14 +1,27 @@
 # Written Reflection
 
-Four required pieces. Fill each in *after* your script is working, based on
-what you actually built — not a generic textbook answer.
+Six required sections. Fill each one in based on what you actually built,
+not a generic textbook answer.
+
+## Assumptions (Question, Assumption, Risk)
+
+List at least 2 things your stakeholder didn't say that your code still
+had to decide, such as what counts as "low stock." For each one, write:
+
+- **Question:** what wasn't specified?
+- **Assumption:** what did you decide?
+- **Risk:** what goes wrong if the assumption is wrong, and how would you
+  check it?
+
+1. _TODO_
+2. _TODO_
 
 ## The 3+ edge cases you found and handled
 
-List each one: the exact line from your data file, what was wrong with it,
-and what your code actually does about it. (See `data/SOURCE.md` for the
-full list of what's planted in the file — you don't need to find all of
-them, just at least 3, for real.)
+For each one: the exact line from your data file, what was wrong with it,
+and what your code does about it. Say whether it skips the line or fixes
+it. See `data/SOURCE.md` for the full list of edge-case types. You need at
+least 3 different types.
 
 1. _TODO_
 2. _TODO_
@@ -16,39 +29,58 @@ them, just at least 3, for real.)
 
 ## Function scope
 
-In your own words: why doesn't a variable defined inside one of your
-functions leak into or overwrite a same-named variable elsewhere in the
-script? What would break if Python worked the other way — every variable
-visible everywhere?
+In your own words: why doesn't a variable created inside one of your
+functions change a variable with the same name somewhere else in the
+script? What would break if every variable were visible everywhere?
 
 _TODO_
 
 ## Search complexity: linear scan vs. dict lookup
 
-State which data structure you chose to hold your item collection (a
-list, a dict keyed by name, something else) and which approach `find_item`
-actually uses to look something up by name. Then:
+Which data structure holds your items (a list, a dict keyed by name, or
+something else)? How does `find_item` look an item up by name?
 
-- Label your actual `find_item` implementation's time complexity — O(n) for
-  a linear scan, or O(1) average-case for a dict-keyed lookup.
-- Explain, tied to your own code (not a generic textbook example), why that
-  complexity matters as the inventory grows — what happens to `find_item`'s
-  runtime going from your ~25 recurring items to 10,000?
+- Label your `find_item`'s time complexity: O(n) for a linear scan, or
+  O(1) on average for a dict lookup.
+- Explain, using your own code, what happens to `find_item`'s runtime if
+  the inventory grows from about 25 items to 10,000.
 
 _TODO_
 
 ## AI-assisted edge-case discovery
 
-You were told to find *at least* 3 edge cases — the data file actually has
-several more planted in it, and a real batch of transactions from an
-actual business would have edge cases nobody planted on purpose at all.
+Your data file has more edge cases than the 3 you need, and real business
+data has problems nobody planted on purpose.
 
-Write 1-2 sentences on: what prompt (or short back-and-forth) would you
-actually give an AI assistant to help you think of *more* categories of
-malformed/unexpected input than the ones you already found by hand? Then,
-just as important: how would you **validate** whatever it suggests before
-trusting it — what's your actual check that a suggested edge case is real
-and worth handling, versus the AI confidently describing a problem that
-doesn't actually apply to your data or your code?
+In 1-2 sentences each:
+
+- What prompt would you give an AI assistant to help you think of more
+  kinds of bad or unexpected input than you found by hand?
+- How would you check its suggestions before trusting them? Name a
+  specific check, not "I'd be careful."
+
+_TODO_
+
+## One real AI prompt, checked
+
+Paste one prompt you actually used with an AI during this sprint, word
+for word. Then fill in the four lines below it.
+
+```text
+(paste your prompt here)
+```
+
+- **Technique:** which technique(s) it uses (Task / Context / Evidence /
+  Output, one-shot, XML tags, plan mode, tests and edge cases), and where
+  each one shows up in the prompt.
+- **What came back:** the AI's answer, trimmed but not reworded.
+- **How I checked it:** one concrete check you ran yourself: a case you
+  worked by hand, a test you wrote, or re-running your code on your data
+  file.
+- **What the check showed:** was the answer right, partly right, or wrong?
+  What did you keep, change or throw out?
+
+Didn't use AI? Write the prompt you would have used, label it "not sent",
+and run the same check on your own code instead.
 
 _TODO_
