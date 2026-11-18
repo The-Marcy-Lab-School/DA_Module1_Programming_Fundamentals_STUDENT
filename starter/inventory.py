@@ -1,7 +1,7 @@
 """
 Command-line inventory tracker -- you choose the scenario.
 
-See ../SCENARIOS.md to pick your stakeholder and data file. Design your own
+See ../PROJECT_OVERVIEW.md to pick your stakeholder and data file. Design your own
 class for one inventory item, based on what *your* stakeholder needs.
 There's no single right set of attributes, and that's on purpose.
 

@@ -1,6 +1,6 @@
 # Data Source
 
-Four batch files, one per scenario in `SCENARIOS.md`. Each is 430 lines of
+Four batch files, one per scenario in `PROJECT_OVERVIEW.md`. Each is 430 lines of
 transactions for a fictional business. They're not from a public dataset.
 Bookstore item names are real public-domain book titles (via
 [Project Gutenberg](https://www.gutenberg.org/), used only as names). The
