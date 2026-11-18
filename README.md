@@ -84,10 +84,10 @@ git commit -m "add my name to LICENSE"
 
 ## The project
 
-- Pick your stakeholder in `SCENARIOS.md` and delete the other 3 data
+- Pick your stakeholder in `PROJECT_OVERVIEW.md` and delete the other 3 data
   files in `data/`.
-- Follow `CHECKLIST_TIMELINE.md` day by day. `RUBRIC.md` shows how it's
-  graded. The MVP checklist is also in the LMS.
+- Follow `CHECKLIST_RUBRIC.md` day by day. The rubric at the bottom of
+  that file shows how it's graded. The MVP checklist is also in the LMS.
 - Write your code in `starter/inventory.py` and your reflection in
   `starter/REFLECTION.md`.
 - Run your script from the repo's **top folder**, not from inside
@@ -103,8 +103,7 @@ git commit -m "add my name to LICENSE"
 
 Your final repo is for employers, not for school. Before your final push:
 
-- Delete `CHECKLIST_TIMELINE.md`, `RUBRIC.md`, `SCENARIOS.md`, and
-  `PROJECT_OVERVIEW.md`. They're school-facing and stay in the LMS.
+- Delete `CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`. They're school-facing and stay in the LMS.
 - Rename the `starter` folder to `analysis`:
 
   ```bash
