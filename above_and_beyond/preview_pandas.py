@@ -15,13 +15,13 @@ import glob
 
 import pandas as pd
 
-# Finds whichever scenario's data file you kept -- see SCENARIOS.md.
+# Finds whichever scenario's data file you kept -- see PROJECT_OVERVIEW.md.
 data_files = glob.glob("data/*_transactions.txt")
 if len(data_files) != 1:
     raise SystemExit(
         f"Expected exactly one data/*_transactions.txt file, found "
         f"{len(data_files)}: {data_files}. Did you delete the other 3 "
-        f"scenarios' data files after choosing yours (see SCENARIOS.md)?"
+        f"scenarios' data files after choosing yours (see PROJECT_OVERVIEW.md)?"
     )
 
 ROWS = []

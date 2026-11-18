@@ -1,9 +1,9 @@
 # MVP: Minimum Bar
 
-This is the same list as the MVP checklist in the LMS. `RUBRIC.md` has the
-full grading detail. The bar:
+This is the same list as the MVP checklist in the LMS. The rubric at the bottom of
+`CHECKLIST_RUBRIC.md` has the full grading detail. The bar:
 
-- [ ] **Scenario chosen** from `SCENARIOS.md`, with the other 3 data
+- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, with the other 3 data
   files deleted.
 - [ ] **Assumptions written down** (Question, Assumption, Risk) in
   `REFLECTION.md`, including what counts as low stock.
@@ -33,12 +33,11 @@ full grading detail. The bar:
   - how to run it
   - reflection
 - [ ] **Clean submission:** no leftover `TODO`s, debug `print()`s, or
-  unused code. School-facing files deleted (`CHECKLIST_TIMELINE.md`,
-  `RUBRIC.md`, `SCENARIOS.md`, `PROJECT_OVERVIEW.md`), and `starter/`
+  unused code. School-facing files deleted (`CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`), and `starter/`
   renamed to `analysis/`.
 - [ ] **Public GitHub repo** with at least 3 commits with clear messages.
 - [ ] **Day 5 share-out:** a pair repo review and a 90-second PREP
   walkthrough. Not graded.
 
-`tools/search.html` is optional. See `CHECKLIST_TIMELINE.md` for the
+`tools/search.html` is optional. See `CHECKLIST_RUBRIC.md` for the
 day-by-day plan.
