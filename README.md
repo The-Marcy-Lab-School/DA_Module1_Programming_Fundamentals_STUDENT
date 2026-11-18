@@ -86,8 +86,9 @@ git commit -m "add my name to LICENSE"
 
 - Pick your stakeholder in `PROJECT_OVERVIEW.md` and delete the other 3 data
   files in `data/`.
-- Follow `CHECKLIST_RUBRIC.md` day by day. The rubric at the bottom of
-  that file shows how it's graded. The MVP checklist is also in the LMS.
+- Open `CHECKLIST_RUBRIC.md`. The MVP checklist at the top is the
+  minimum to pass (it's also in the LMS), then Above & Beyond, then a
+  day-by-day plan, and the rubric at the bottom.
 - Write your code in `starter/inventory.py` and your reflection in
   `starter/REFLECTION.md`.
 - Run your script from the repo's **top folder**, not from inside

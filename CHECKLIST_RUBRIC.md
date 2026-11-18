@@ -1,144 +1,54 @@
 # Checklist & Rubric: 5-Day Sprint
 
-**4 build days, then a share-out day.** Work through the items in order.
-Each one is also part of the submission checklist. The rubric is at
-the bottom of this file, after Above & Beyond.
+This file has four parts:
 
-## How the sprint works
+1. **MVP checklist:** the minimum to pass.
+2. **Above & Beyond:** optional stretch work.
+3. **Day-by-day plan:** what to do each day of the sprint.
+4. **Rubric:** how your project is graded.
 
-A sprint is a short, fixed block of time. A team commits to a set of work,
-builds it, then stops and shows what they built. Professional software
-teams plan their work this way. This project is your first sprint.
+## MVP checklist
 
-- **Sprint planning (Day 1):** understand the goal before you write code.
-  The scope is already set (the MVP checklist in the LMS). Your job is to
-  understand it.
-- **Daily check-in:** at the start of each build day, answer three
-  questions in 2 minutes. What did I finish yesterday? What am I doing
-  today? Is anything blocking me?
-- **Backlog:** useful work that is deliberately left out of this sprint.
-  The Above & Beyond section, just above the rubric, is your backlog.
-- **Sprint review (Day 5):** you show working code to your classmates. It
-  isn't a status update.
+The minimum for a complete, passing project. It's the same list as the
+MVP checklist in the LMS.
 
-## Day 1: Plan and build your class
+- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, with the other 3 data
+  files deleted.
+- [ ] **Assumptions written down** (Question, Assumption, Risk) in
+  `REFLECTION.md`, including what counts as low stock.
+- [ ] **Your own class**, with attributes that fit your stakeholder's
+  need, used throughout (no separate lists or dicts holding the same
+  data).
+- [ ] **At least 2 standalone functions** (not methods) with clear
+  parameters and a `return`. `print_summary` is the only exception.
+- [ ] **Batch processing:** a loop applies the `ADD`, `REMOVE`, and
+  `SEARCH` lines from your data file.
+- [ ] **At least 3 different types of edge case** handled without
+  crashing. Each one is skipped with a specific printed reason or fixed on
+  purpose.
+- [ ] **At least one `try`/`except`** for a quantity that isn't a number.
+- [ ] **`find_item`** uses a linear scan or a dict lookup.
+- [ ] **`print_summary`** prints every item and a separate low-stock list.
+- [ ] **`export_to_json`** writes `inventory.json` and is called by your
+  script.
+- [ ] **Docstrings you wrote yourself** on every function and method.
+- [ ] **`REFLECTION.md` complete:** all six sections.
+- [ ] **Your own `README.md`**, covering:
+  - title and summary
+  - business scenario
+  - what it does
+  - findings
+  - key decisions
+  - how to run it
+  - reflection
+- [ ] **Clean submission:** no leftover `TODO`s, debug `print()`s, or
+  unused code. School-facing files deleted (`CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`), and `starter/`
+  renamed to `analysis/`.
+- [ ] **Public GitHub repo** with at least 3 commits with clear messages.
+- [ ] **Day 5 share-out:** a pair repo review and a 90-second PREP
+  walkthrough. Not graded.
 
-- [ ] Create your repo from the template with **"Use this template"** (not
-  Fork) and clone it. See `README.md`.
-- [ ] Confirm `.gitignore`, `LICENSE`, and the git history are there.
-  Replace `[YOUR NAME]` in `LICENSE` with your name and commit.
-- [ ] Check Python works: `python3 --version`.
-- [ ] Read all 4 scenarios in `PROJECT_OVERVIEW.md`. Pick one and delete the
-  other 3 data files.
-- [ ] Read `starter/REFLECTION.md` so you know what you'll need to explain
-  at the end.
-- [ ] Write your QAR assumptions in the "Assumptions" section of
-  `REFLECTION.md`. Include at least what counts as "low stock."
-- [ ] Sketch your class's attributes on paper or in a scratch file, based
-  on your stakeholder's words.
-  - Common mistake: choosing attributes that don't answer your
-    stakeholder's question, or copying them from another scenario.
-- [ ] Trace the first 3 lines of your data file by hand. What makes an
-  `ADD` line valid or invalid?
-- [ ] Write `__init__` to store your attributes, and an `is_low_stock`
-  method that uses your assumption.
-- [ ] Create 2 objects and change one. Confirm the other one didn't
-  change.
-- [ ] Write a docstring for the class and each method in your own words.
-- [ ] Commit: `git commit -m "add [scenario] item class"`.
-
-## Day 2: Read and validate lines
-
-- [ ] `read_batch_file` reads your data file and returns a list of lines.
-- [ ] `validate_line` tells a valid `ADD`, `REMOVE`, or `SEARCH` line from
-  an invalid one. Test it on 3 to 5 lines you copy from the data file
-  before running the whole file.
-- [ ] Use at least one `try`/`except ValueError` for a quantity that isn't
-  a number.
-- [ ] Write a docstring for each function in your own words.
-  - Common mistake: writing one long function that reads, validates, and
-    prints. Keep each function to one job.
-- [ ] Commit: `git commit -m "add batch file parsing and validation"`.
-
-## Day 3: Process the real file and handle edge cases
-
-- [ ] `process_transactions` loops over every line in your data file and
-  updates a collection of your objects. `ADD` creates or restocks an item,
-  `REMOVE` lowers its quantity, and `SEARCH` looks one up.
-- [ ] `find_item` finds an item by name with either a linear scan or a
-  dict lookup. Pick one.
-- [ ] Handle at least **3 different types** of edge case from
-  `data/SOURCE.md`. Each one either skips the line with a specific printed
-  reason or fixes it on purpose. The script must not crash.
-  - Common mistake: letting one bad line crash the whole script. Run the
-    full file, not just the lines that work.
-  - Common mistake: keeping item data in separate lists instead of using
-    your class.
-- [ ] Commit: `git commit -m "process real batch file, handle edge cases"`.
-- [ ] Push. By the end of Day 3 you should have at least 3 commits on
-  GitHub.
-
-## Day 4: Finish, reflect, write your README
-
-- [ ] `print_summary` prints every item and then a separate low-stock
-  list.
-- [ ] `export_to_json` writes `inventory.json`, and your script calls it.
-- [ ] Optional: check your results with `tools/search.html`. This is a
-  small web page (given code) that reads your `inventory.json` and filters
-  your items as you type. To open it, run `python3 -m http.server` in your
-  repo's top folder, then go to `http://localhost:8000/tools/search.html`
-  in your browser. Press `Control+C` in Terminal to stop the server.
-- [ ] Fill in every section of `REFLECTION.md`: assumptions, edge cases,
-  function scope, Big-O, AI-assisted edge-case discovery, and one real AI
-  prompt, checked.
-  - Common mistake: a Big-O answer copied from a textbook that doesn't
-    mention your own `find_item`.
-  - Common mistake: an AI answer with no specific way to check what the AI
-    suggests.
-- [ ] Clean up: no leftover `TODO` comments, placeholder docstrings, debug
-  `print()` lines, or unused variables.
-- [ ] Replace the text of `README.md` with your own project README. Write
-  it for an employer who has never seen this assignment and will skim it
-  in under a minute:
-  - **Title and one-line summary:** what you built and for whom.
-  - **Business scenario:** your stakeholder, their problem, and why it
-    matters to them.
-  - **What it does:** what the script does with the transaction file.
-  - **Findings:** what your run showed. For example, how many lines were
-    skipped and why, and which items are low on stock. Use your real
-    output.
-  - **Key decisions:** your class attributes and why, your main
-    assumption, and your search approach with its Big-O.
-  - **How to run it:** the exact command.
-  - **Reflection:** 2 or 3 bullets on what you learned and what you'd
-    improve next. Link to `analysis/REFLECTION.md` for the full version.
-- [ ] Delete `CHECKLIST_RUBRIC.md` (this file) and `PROJECT_OVERVIEW.md`. They're school-facing, not
-  employer-facing, and stay available in the LMS.
-- [ ] Rename the `starter` folder to `analysis` with
-  `git mv starter analysis`. Then run `python3 analysis/inventory.py` once
-  to confirm it still works.
-- [ ] Final push. Open your repo in a private browser window to confirm
-  it's public.
-
-## Day 5: Share-out
-
-No slides. You'll do two things in class, in TIP style:
-
-- **Pair repo review.** You and a partner review each other's repo and
-  code against a checklist your instructor hands out, then trade one
-  strength and one fix.
-- **90-second project walkthrough.** Answer "Walk me through your
-  project" using PREP (Point, Reason, Example, Point). Your instructor
-  times it and stops you at 110 seconds. Classmates score each part of
-  PREP and give feedback, then you try again.
-
-To prepare:
-
-- [ ] Your README is finished. Its summary, business scenario, and key
-  decisions are your talking points.
-- [ ] Practice your walkthrough out loud once with a timer. Aim for 90
-  seconds.
-- [ ] After the share-out, push any fixes your partner found.
+`tools/search.html` is optional.
 
 ## Above & Beyond (optional)
 
@@ -184,6 +94,146 @@ copy the file you need.
   its output to your own summary. What did pandas do with the bad lines
   that your code handled differently?
   Start here: [pandas: 10 minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html).
+
+## Day-by-day plan
+
+**4 build days, then a share-out day.** Work through the items in order.
+
+### How the sprint works
+
+A sprint is a short, fixed block of time. A team commits to a set of work,
+builds it, then stops and shows what they built. Professional software
+teams plan their work this way. This project is your first sprint.
+
+- **Sprint planning (Day 1):** understand the goal before you write code.
+  The scope is already set (the MVP checklist at the top of this file). Your job is to
+  understand it.
+- **Daily check-in:** at the start of each build day, answer three
+  questions in 2 minutes. What did I finish yesterday? What am I doing
+  today? Is anything blocking me?
+- **Backlog:** useful work that is deliberately left out of this sprint.
+  The Above & Beyond section near the top of this file is your backlog.
+- **Sprint review (Day 5):** you show working code to your classmates. It
+  isn't a status update.
+
+### Day 1: Plan and build your class
+
+- [ ] Create your repo from the template with **"Use this template"** (not
+  Fork) and clone it. See `README.md`.
+- [ ] Confirm `.gitignore`, `LICENSE`, and the git history are there.
+  Replace `[YOUR NAME]` in `LICENSE` with your name and commit.
+- [ ] Check Python works: `python3 --version`.
+- [ ] Read all 4 scenarios in `PROJECT_OVERVIEW.md`. Pick one and delete the
+  other 3 data files.
+- [ ] Read `starter/REFLECTION.md` so you know what you'll need to explain
+  at the end.
+- [ ] Write your QAR assumptions in the "Assumptions" section of
+  `REFLECTION.md`. Include at least what counts as "low stock."
+- [ ] Sketch your class's attributes on paper or in a scratch file, based
+  on your stakeholder's words.
+  - Common mistake: choosing attributes that don't answer your
+    stakeholder's question, or copying them from another scenario.
+- [ ] Trace the first 3 lines of your data file by hand. What makes an
+  `ADD` line valid or invalid?
+- [ ] Write `__init__` to store your attributes, and an `is_low_stock`
+  method that uses your assumption.
+- [ ] Create 2 objects and change one. Confirm the other one didn't
+  change.
+- [ ] Write a docstring for the class and each method in your own words.
+- [ ] Commit: `git commit -m "add [scenario] item class"`.
+
+### Day 2: Read and validate lines
+
+- [ ] `read_batch_file` reads your data file and returns a list of lines.
+- [ ] `validate_line` tells a valid `ADD`, `REMOVE`, or `SEARCH` line from
+  an invalid one. Test it on 3 to 5 lines you copy from the data file
+  before running the whole file.
+- [ ] Use at least one `try`/`except ValueError` for a quantity that isn't
+  a number.
+- [ ] Write a docstring for each function in your own words.
+  - Common mistake: writing one long function that reads, validates, and
+    prints. Keep each function to one job.
+- [ ] Commit: `git commit -m "add batch file parsing and validation"`.
+
+### Day 3: Process the real file and handle edge cases
+
+- [ ] `process_transactions` loops over every line in your data file and
+  updates a collection of your objects. `ADD` creates or restocks an item,
+  `REMOVE` lowers its quantity, and `SEARCH` looks one up.
+- [ ] `find_item` finds an item by name with either a linear scan or a
+  dict lookup. Pick one.
+- [ ] Handle at least **3 different types** of edge case from
+  `data/SOURCE.md`. Each one either skips the line with a specific printed
+  reason or fixes it on purpose. The script must not crash.
+  - Common mistake: letting one bad line crash the whole script. Run the
+    full file, not just the lines that work.
+  - Common mistake: keeping item data in separate lists instead of using
+    your class.
+- [ ] Commit: `git commit -m "process real batch file, handle edge cases"`.
+- [ ] Push. By the end of Day 3 you should have at least 3 commits on
+  GitHub.
+
+### Day 4: Finish, reflect, write your README
+
+- [ ] `print_summary` prints every item and then a separate low-stock
+  list.
+- [ ] `export_to_json` writes `inventory.json`, and your script calls it.
+- [ ] Optional: check your results with `tools/search.html`. This is a
+  small web page (given code) that reads your `inventory.json` and filters
+  your items as you type. To open it, run `python3 -m http.server` in your
+  repo's top folder, then go to `http://localhost:8000/tools/search.html`
+  in your browser. Press `Control+C` in Terminal to stop the server.
+- [ ] Fill in every section of `REFLECTION.md`: assumptions, edge cases,
+  function scope, Big-O, AI-assisted edge-case discovery, and one real AI
+  prompt, checked.
+  - Common mistake: a Big-O answer copied from a textbook that doesn't
+    mention your own `find_item`.
+  - Common mistake: an AI answer with no specific way to check what the AI
+    suggests.
+- [ ] Clean up: no leftover `TODO` comments, placeholder docstrings, debug
+  `print()` lines, or unused variables.
+- [ ] Replace the text of `README.md` with your own project README. Write
+  it for an employer who has never seen this assignment and will skim it
+  in under a minute:
+  - **Title and one-line summary:** what you built and for whom.
+  - **Business scenario:** your stakeholder, their problem, and why it
+    matters to them.
+  - **What it does:** what the script does with the transaction file.
+  - **Findings:** what your run showed. For example, how many lines were
+    skipped and why, and which items are low on stock. Use your real
+    output.
+  - **Key decisions:** your class attributes and why, your main
+    assumption, and your search approach with its Big-O.
+  - **How to run it:** the exact command.
+  - **Reflection:** 2 or 3 bullets on what you learned and what you'd
+    improve next. Link to `analysis/REFLECTION.md` for the full version.
+- [ ] Delete `CHECKLIST_RUBRIC.md` (this file) and `PROJECT_OVERVIEW.md`. They're school-facing, not
+  employer-facing, and stay available in the LMS.
+- [ ] Rename the `starter` folder to `analysis` with
+  `git mv starter analysis`. Then run `python3 analysis/inventory.py` once
+  to confirm it still works.
+- [ ] Final push. Open your repo in a private browser window to confirm
+  it's public.
+
+### Day 5: Share-out
+
+No slides. You'll do two things in class, in TIP style:
+
+- **Pair repo review.** You and a partner review each other's repo and
+  code against a checklist your instructor hands out, then trade one
+  strength and one fix.
+- **90-second project walkthrough.** Answer "Walk me through your
+  project" using PREP (Point, Reason, Example, Point). Your instructor
+  times it and stops you at 110 seconds. Classmates score each part of
+  PREP and give feedback, then you try again.
+
+To prepare:
+
+- [ ] Your README is finished. Its summary, business scenario, and key
+  decisions are your talking points.
+- [ ] Practice your walkthrough out loud once with a timer. Aim for 90
+  seconds.
+- [ ] After the share-out, push any fixes your partner found.
 
 ---
 
