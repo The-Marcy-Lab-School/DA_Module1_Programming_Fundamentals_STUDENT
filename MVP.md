@@ -25,7 +25,7 @@ This is the same list as the MVP checklist in the LMS. The rubric at the bottom 
 - [ ] **Docstrings you wrote yourself** on every function and method.
 - [ ] **`REFLECTION.md` complete:** all six sections.
 - [ ] **Your own `README.md`**, covering:
-  - title and summary
+  - title and one-line summary
   - business scenario
   - what it does
   - findings
