@@ -129,9 +129,9 @@ spreadsheet usually has.
   lines in your data file.
 - `starter/REFLECTION.md` complete, with all six sections and **every
   Instructions (delete before your final push) block deleted**.
-- Your own **README.md** replacing this template's. It covers your
-  stakeholder, business scenario, findings, key decisions, how to run it,
-  and a short reflection.
+- Your own **README.md** replacing this template's, with these sections:
+  title and one-line summary, business scenario, what it does, findings,
+  key decisions, how to run it, and reflection.
 - At least **3 commits** with clear messages.
 - **Day 5 share-out:** a pair repo review and a 90-second project
   walkthrough. No slides.
