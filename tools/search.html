@@ -55,7 +55,7 @@ function isLowStockGuess(item) {
   // class's actual is_low_stock() logic, so it guesses from any
   // numeric-looking field with a small value. Your own print_summary()
   // in inventory.py is the real source of truth for low stock, not this.
-  return Object.values(item).some(v => typeof v === "number" && v > 0 && v < 5);
+  return Object.values(item).some(v => typeof v === "number" && v >= 0 && v < 5);
 }
 
 function render(items) {
