@@ -12,8 +12,8 @@ This file has four parts:
 The minimum for a complete, passing project. It's the same list as the
 MVP checklist in the LMS.
 
-- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, with the other 3 data
-  files deleted.
+- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, with **the other 3 data
+  files deleted**.
 - [ ] **Assumptions written down** (Question, Assumption, Risk) in
   `REFLECTION.md`, including what counts as low stock.
 - [ ] **Your own class**, with attributes that fit your stakeholder's
@@ -42,8 +42,8 @@ MVP checklist in the LMS.
   - how to run it
   - reflection
 - [ ] **Clean submission:** no leftover `TODO`s, debug `print()`s, or
-  unused code. School-facing files deleted (`CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`), and `starter/`
-  renamed to `analysis/`.
+  unused code. **School-facing files deleted (`CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`), and `starter/`
+  renamed to `analysis/`.**
 - [ ] **Public GitHub repo** with at least 3 commits with clear messages.
 - [ ] **Day 5 share-out:** a pair repo review and a 90-second PREP
   walkthrough. Not graded.
@@ -123,8 +123,8 @@ teams plan their work this way. This project is your first sprint.
 - [ ] Confirm `.gitignore`, `LICENSE`, and the git history are there.
   Replace `[YOUR NAME]` in `LICENSE` with your name and commit.
 - [ ] Check Python works: `python3 --version`.
-- [ ] Read all 4 scenarios in `PROJECT_OVERVIEW.md`. Pick one and delete the
-  other 3 data files.
+- [ ] Read all 4 scenarios in `PROJECT_OVERVIEW.md`. Pick one and **delete the
+  other 3 data files**.
 - [ ] Read `starter/REFLECTION.md` so you know what you'll need to explain
   at the end.
 - [ ] Write your QAR assumptions in the "Assumptions" section of
@@ -207,9 +207,9 @@ teams plan their work this way. This project is your first sprint.
   - **How to run it:** the exact command.
   - **Reflection:** 2 or 3 bullets on what you learned and what you'd
     improve next. Link to `analysis/REFLECTION.md` for the full version.
-- [ ] Delete `CHECKLIST_RUBRIC.md` (this file) and `PROJECT_OVERVIEW.md`. They're school-facing, not
+- [ ] **Delete `CHECKLIST_RUBRIC.md` (this file) and `PROJECT_OVERVIEW.md`.** They're school-facing, not
   employer-facing, and stay available in the LMS.
-- [ ] Rename the `starter` folder to `analysis` with
+- [ ] **Rename the `starter` folder to `analysis`** with
   `git mv starter analysis`. Then run `python3 analysis/inventory.py` once
   to confirm it still works.
 - [ ] Final push. Open your repo in a private browser window to confirm
