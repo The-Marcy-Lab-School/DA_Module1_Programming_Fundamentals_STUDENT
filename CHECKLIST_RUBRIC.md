@@ -224,7 +224,7 @@ teams plan their work this way. This project is your first sprint.
 No slides. You'll do two things in class, in TIP style:
 
 - **Pair repo review.** You and a partner review each other's repo and
-  code against a checklist your instructor hands out, then trade one
+  code against the checklist in the share-out handout, then trade one
   strength and one fix.
 - **90-second project walkthrough.** Answer "Walk me through your
   project" using PREP (Point, Reason, Example, Point). Your instructor
@@ -237,7 +237,8 @@ To prepare:
   decisions are your talking points.
 - [ ] Practice your walkthrough out loud once with a timer. Aim for 90
   seconds.
-- [ ] After the share-out, push any fixes your partner found.
+- [ ] After the share-out, write your improvement plan in the share-out
+  handout and **push those fixes within 48 hours**.
 
 ---
 
