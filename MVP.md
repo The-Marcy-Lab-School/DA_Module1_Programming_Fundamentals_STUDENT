@@ -3,7 +3,7 @@
 This is the same list as the MVP checklist in the LMS. The rubric at the bottom of
 `CHECKLIST_RUBRIC.md` has the full grading detail. The bar:
 
-- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, with **the other 3 data
+- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, **with the other 3 data
   files deleted**.
 - [ ] **Assumptions written down** (Question, Assumption, Risk) in
   `REFLECTION.md`, including what counts as low stock.
