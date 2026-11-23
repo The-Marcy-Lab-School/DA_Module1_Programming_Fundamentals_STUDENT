@@ -127,7 +127,8 @@ spreadsheet usually has.
   - a call to `export_to_json`
 - At least **3 different types** of edge case handled. They must be real
   lines in your data file.
-- `starter/REFLECTION.md` complete, with all six sections.
+- `starter/REFLECTION.md` complete, with all six sections and **every
+  Instructions (delete before your final push) block deleted**.
 - Your own **README.md** replacing this template's. It covers your
   stakeholder, business scenario, findings, key decisions, how to run it,
   and a short reflection.

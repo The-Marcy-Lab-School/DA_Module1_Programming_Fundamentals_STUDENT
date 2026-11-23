@@ -105,6 +105,9 @@ git commit -m "add my name to LICENSE"
 Your final repo is for employers, not for school. Before your final push:
 
 - **Delete `CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`.** They're school-facing and stay in the LMS.
+- **Delete every Instructions (delete before your final push) block and
+  every `_TODO_` in `starter/REFLECTION.md`.** Keep the headings and your
+  answers.
 - **Rename the `starter` folder to `analysis`:**
 
   ```bash
