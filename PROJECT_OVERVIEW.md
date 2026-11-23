@@ -30,8 +30,8 @@ you'll combine it with SQL.
 ## Choose your scenario
 
 Pick **one** of the four scenarios below. Each one gives you a stakeholder,
-what they need, and a batch file of 430 transactions in `data/`. Once you
-choose, **delete the other three data files from your repo**.
+what they need, and a batch file of 430 transactions in `data/`. **Once you
+choose, delete the other three data files from your repo**.
 
 ### What the data gives you
 
@@ -117,7 +117,7 @@ spreadsheet usually has.
 ## Deliverables at a glance
 
 - A **public GitHub repo** created with "Use this template" (not Fork).
-- One scenario chosen below, with **the other 3 data files
+- One scenario chosen below, **with the other 3 data files
   deleted**.
 - `starter/inventory.py` complete (**renamed to `analysis/` before your
   final push**). It needs:

@@ -84,7 +84,7 @@ git commit -m "add my name to LICENSE"
 
 ## The project
 
-- Pick your stakeholder in `PROJECT_OVERVIEW.md` and **delete the other 3 data
+- Pick your stakeholder in `PROJECT_OVERVIEW.md` **and delete the other 3 data
   files in `data/`**.
 - Open `CHECKLIST_RUBRIC.md`. The MVP checklist at the top is the
   minimum to pass (it's also in the LMS), then Above & Beyond, then a

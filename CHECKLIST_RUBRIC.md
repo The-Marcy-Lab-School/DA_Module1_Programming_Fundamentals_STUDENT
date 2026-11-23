@@ -12,7 +12,7 @@ This file has four parts:
 The minimum for a complete, passing project. It's the same list as the
 MVP checklist in the LMS.
 
-- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, with **the other 3 data
+- [ ] **Scenario chosen** from `PROJECT_OVERVIEW.md`, **with the other 3 data
   files deleted**.
 - [ ] **Assumptions written down** (Question, Assumption, Risk) in
   `REFLECTION.md`, including what counts as low stock.
@@ -123,7 +123,7 @@ teams plan their work this way. This project is your first sprint.
 - [ ] Confirm `.gitignore`, `LICENSE`, and the git history are there.
   Replace `[YOUR NAME]` in `LICENSE` with your name and commit.
 - [ ] Check Python works: `python3 --version`.
-- [ ] Read all 4 scenarios in `PROJECT_OVERVIEW.md`. Pick one and **delete the
+- [ ] Read all 4 scenarios in `PROJECT_OVERVIEW.md`. **Pick one and delete the
   other 3 data files**.
 - [ ] Read `starter/REFLECTION.md` so you know what you'll need to explain
   at the end.
