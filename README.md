@@ -84,8 +84,8 @@ git commit -m "add my name to LICENSE"
 
 ## The project
 
-- Pick your stakeholder in `PROJECT_OVERVIEW.md` and delete the other 3 data
-  files in `data/`.
+- Pick your stakeholder in `PROJECT_OVERVIEW.md` and **delete the other 3 data
+  files in `data/`**.
 - Open `CHECKLIST_RUBRIC.md`. The MVP checklist at the top is the
   minimum to pass (it's also in the LMS), then Above & Beyond, then a
   day-by-day plan, and the rubric at the bottom.
@@ -104,8 +104,8 @@ git commit -m "add my name to LICENSE"
 
 Your final repo is for employers, not for school. Before your final push:
 
-- Delete `CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`. They're school-facing and stay in the LMS.
-- Rename the `starter` folder to `analysis`:
+- **Delete `CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`.** They're school-facing and stay in the LMS.
+- **Rename the `starter` folder to `analysis`:**
 
   ```bash
   git mv starter analysis
