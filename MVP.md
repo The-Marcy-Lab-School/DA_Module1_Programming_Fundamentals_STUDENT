@@ -33,7 +33,8 @@ This is the same list as the MVP checklist in the LMS. The rubric at the bottom 
   - how to run it
   - reflection
 - [ ] **Clean submission:** no leftover `TODO`s, debug `print()`s, or
-  unused code. **School-facing files deleted (`CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`), and `starter/`
+  unused code. **Every Instructions block deleted from `REFLECTION.md`.**
+  **School-facing files deleted (`CHECKLIST_RUBRIC.md` and `PROJECT_OVERVIEW.md`), and `starter/`
   renamed to `analysis/`.**
 - [ ] **Public GitHub repo** with at least 3 commits with clear messages.
 - [ ] **Day 5 share-out:** a pair repo review and a 90-second PREP
